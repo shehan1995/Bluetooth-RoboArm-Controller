@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndependentJoint"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Joint 1"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j1Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j1Plus"
+                        android:src="@drawable/plus_icon"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j1Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j1Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j1Up"
+                                android:src="@drawable/ic_up"
+                                android:text="Button" />
+
+                            <ImageButton
+                                android:id="@+id/j1Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j1Down"
+                                android:src="@drawable/ic_down"
+                                android:text="Button" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j1Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j1Minus"
+                        android:src="@drawable/minus_icon"
+                        android:text="-"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="106dp"
+                        tools:layout_editor_absoluteY="58dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Joint 2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="220dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j2Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j2Plus"
+                        android:src="@drawable/plus_icon"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j2Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j2Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j2Up"
+                                android:src="@drawable/ic_up" />
+
+                            <ImageButton
+                                android:id="@+id/j2Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j2Down"
+                                android:src="@drawable/ic_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j2Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j2Minus"
+                        android:src="@drawable/minus_icon"
+                        tools:layout_editor_absoluteX="259dp"
+                        tools:layout_editor_absoluteY="58dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Joint 3"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="147dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j3Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j3Plus"
+                        android:src="@drawable/plus_icon"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="192dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j3Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j3Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j3Up"
+                                android:src="@drawable/ic_up" />
+
+                            <ImageButton
+                                android:id="@+id/j3Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j3Down"
+                                android:src="@drawable/ic_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j3Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j3Minus"
+                        android:src="@drawable/minus_icon"
+                        tools:layout_editor_absoluteX="106dp"
+                        tools:layout_editor_absoluteY="192dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Joint 4"
+                    tools:layout_editor_absoluteX="213dp"
+                    tools:layout_editor_absoluteY="146dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j4Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j4Plus"
+                        android:src="@drawable/plus_icon"
+
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="192dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j4Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j4Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j4Up"
+                                android:src="@drawable/ic_up" />
+
+                            <ImageButton
+                                android:id="@+id/j4Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j4Down"
+                                android:src="@drawable/ic_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j4Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j4Minus"
+                        android:src="@drawable/minus_icon"
+                        tools:layout_editor_absoluteX="259dp"
+                        tools:layout_editor_absoluteY="192dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Joint 5"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="279dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j5Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j5Plus"
+                        android:src="@drawable/plus_icon"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="334dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j5Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j5Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j5Up"
+                                android:src="@drawable/ic_up" />
+
+                            <ImageButton
+                                android:id="@+id/j5Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j5Down"
+                                android:src="@drawable/ic_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j5Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j5Minus"
+                        android:src="@drawable/minus_icon"
+                        tools:layout_editor_absoluteX="106dp"
+                        tools:layout_editor_absoluteY="334dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/lbl_j6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Joint 6"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="279dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/j6Plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j6Plus"
+                        android:src="@drawable/plus_icon"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="334dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <EditText
+                            android:id="@+id/j6Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageButton
+                                android:id="@+id/j6Up"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j6Up"
+                                android:src="@drawable/ic_up" />
+
+                            <ImageButton
+                                android:id="@+id/j6Down"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_glow"
+                                android:onClick="j6Down"
+                                android:src="@drawable/ic_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/j6Minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_glow"
+                        android:onClick="j6Minus"
+                        android:src="@drawable/minus_icon"
+                        tools:layout_editor_absoluteX="258dp"
+                        tools:layout_editor_absoluteY="334dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

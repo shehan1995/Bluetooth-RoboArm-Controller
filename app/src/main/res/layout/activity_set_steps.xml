@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetSteps">
+
+
+    <Button
+        android:id="@+id/j5Plus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="13dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_j5"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j5" />
+
+    <Button
+        android:id="@+id/j5Minus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="13dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/snp_j5_int"
+        app:layout_constraintTop_toBottomOf="@+id/j5Plus" />
+
+    <Button
+        android:id="@+id/j3Minus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="13dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/snp_j3_int"
+        app:layout_constraintTop_toBottomOf="@+id/j3Plus" />
+
+    <Button
+        android:id="@+id/j3Plus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="21dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/snp_j3_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j3" />
+
+    <Button
+        android:id="@+id/j1Minus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="11dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/snp_j1_int"
+        app:layout_constraintTop_toBottomOf="@+id/j1Plus" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j5_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j5"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j6_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j6_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j6"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j5_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j5_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j5"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j4_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j4_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j4"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j3_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j3_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j3"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j2_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j2_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j2"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j6_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/snp_j6_float"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j5_float"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j6"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j4_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j3_float"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j4"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j3_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/snp_j3_float"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/snp_j1_int"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j3"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j2_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j1_float"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j2"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <TextView
+        android:id="@+id/lbl_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="33dp"
+        android:text="Joint 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="33dp"
+        android:text="Joint 2"
+        app:layout_constraintStart_toEndOf="@+id/lbl_j1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_j3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="29dp"
+        android:text="Joint 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snp_j1_float" />
+
+    <TextView
+        android:id="@+id/lbl_j4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="29dp"
+        android:text="Joint 4"
+        app:layout_constraintStart_toEndOf="@+id/lbl_j3"
+        app:layout_constraintTop_toBottomOf="@+id/snp_j2_float" />
+
+    <TextView
+        android:id="@+id/lbl_j5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="39dp"
+        android:text="Joint 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snp_j3_float" />
+
+    <TextView
+        android:id="@+id/lbl_j6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="39dp"
+        android:text="Joint 6"
+        app:layout_constraintStart_toEndOf="@+id/lbl_j5"
+        app:layout_constraintTop_toBottomOf="@+id/snp_j4_float" />
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j1_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/snp_j6_int"
+        android:layout_alignTop="@+id/snp_j1_int"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toEndOf="@+id/snp_j1_int"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j1"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+        android:id="@+id/snp_j1_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/number_picker_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_j1"
+        app:snp_buttonIconDown="@drawable/ic_down"
+        app:snp_buttonIconUp="@drawable/ic_up"
+        app:snp_maxValue="100"
+        app:snp_minValue="-100"
+        app:snp_orientation="vertical"
+        app:snp_stepSize="1"
+        app:snp_updateInterval="1"
+        app:snp_value="0">
+
+    </com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker>
+
+    <Button
+        android:id="@+id/j1Plus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/snp_j1_int"
+        app:layout_constraintTop_toTopOf="@+id/lbl_j1" />
+
+</android.support.constraint.ConstraintLayout>

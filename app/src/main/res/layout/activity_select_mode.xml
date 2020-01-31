@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectMode">
+
+    <TextView
+        android:id="@+id/selectHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="121dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="55dp"
+        android:text="Select Operating Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/independent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="47dp"
+        android:text="Independent Mode"
+        android:onClick="selectIndependent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectHeading" />
+
+    <Button
+        android:id="@+id/coordinated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="111dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="39dp"
+        android:text="Coordinated Mode"
+        android:onClick="selectCordinated"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/independent" />
+</android.support.constraint.ConstraintLayout>
